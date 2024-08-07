@@ -2,11 +2,18 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import mkcert from "vite-plugin-mkcert";
 import tsPaths from "vite-tsconfig-paths";
+import path from "path";
 
 export default defineConfig({
   server: {
+    //@ts-ignore
     https: true,
     port: 5173,
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
   plugins: [
     react(),
