@@ -6,7 +6,7 @@
     "build": "turbo vite.build",
     "build-storybook": "storybook build",
     "coverage": "vitest run --coverage",
-    "dev": "turbo vite.dev",
+    "dev": "vite",
     "lint": "tsc",
     "prepare": "is-ci || husky install",
     "preview": "turbo vite.preview",
