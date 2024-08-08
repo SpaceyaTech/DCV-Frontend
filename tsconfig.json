@@ -17,11 +17,16 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "sourceMap": true,
-    "types": ["vite/client", "@total-typescript/ts-reset"],
+    "types": [
+      "vite/client",
+      "@total-typescript/ts-reset",
+      "vitest/globals",
+      "@testing-library/jest-dom"
+    ],
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "./vitest.setup.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

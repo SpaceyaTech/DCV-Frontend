@@ -17,10 +17,19 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        santoshi: ["Santoshi", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        "primary-blue": "#D9F0FF",
+        "primary-text": "#006AAC",
+        "background-main": "#FDF6ED",
+        "neutral-base-white": "#FAFAFA",
+        secondary200: "#FFE8C2",
+        secondary1000: "#6A4100",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
