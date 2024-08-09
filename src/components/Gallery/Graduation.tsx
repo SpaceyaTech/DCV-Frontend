@@ -12,16 +12,16 @@ const Graduation = () => {
         Cliff and Henry's Graduation
       </h1>
       <p className="my-1 italic">From the MPESA FOUNDATION ACADEMY</p>
-      <div className="z-10 -mb-20 mt-5 flex flex-row items-center justify-center gap-5 sm:-mb-40">
+      <div className="z-10 -mb-20 mt-16 flex flex-row items-center justify-center gap-5 sm:-mb-40">
         <img
           src={graduationImage01}
           alt="graduation image1"
-          className="w-1/3 rounded-3xl border border-primary600 p-1 sm:w-1/2 sm:rounded-[35px]"
+          className="w-1/3 rounded-3xl border border-primary600 p-1 sm:w-1/2 sm:rounded-[37px]"
         />
         <img
           src={graduationImage02}
           alt="graduation image2"
-          className="w-1/3 rounded-3xl border border-primary600 p-1 sm:w-1/2 sm:rounded-[35px]"
+          className="w-1/3 rounded-3xl border border-primary600 p-1 sm:w-1/2 sm:rounded-[37px]"
         />
       </div>
       <div className="mt-5 flex min-h-[350px] w-[90%] flex-col items-center justify-center rounded-3xl bg-primary-blue px-5 sm:w-[80%]">
