@@ -6,7 +6,11 @@ const index = () => {
   return (
     <div className="mx-auto w-fit rounded-xl bg-white text-base">
       <div className="flex flex-col items-center justify-center gap-y-4 text-center">
-        <img className="rounded-t-xl" src={DecorativeImageTop} alt="" />
+        <img
+          className="rounded-t-xl"
+          src={DecorativeImageTop}
+          alt="Top decorative pattern desktop"
+        />
         <p className="text-[18px] italic text-[#898384]">
           {" "}
           Because every child deserves an amazing childhood
@@ -24,7 +28,11 @@ const index = () => {
         <Button className="h-[46px] w-[296px] self-center rounded-[67px] bg-[#0097F5] text-[20px]">
           Support us today 💛
         </Button>
-        <img className="rounded-b-xl" src={DecorativeImageBottom} alt="" />
+        <img
+          className="rounded-b-xl"
+          src={DecorativeImageBottom}
+          alt="Bottom decorative pattern desktop"
+        />
       </div>
     </div>
   );

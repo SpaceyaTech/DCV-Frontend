@@ -5,7 +5,11 @@ import { Button } from "../ui/button";
 const index = () => {
   return (
     <div className="mx-auto w-[90%] rounded-xl bg-white text-base">
-      <img className="rounded-t-xl" src={DecorativeImageTop} alt="" />
+      <img
+        className="rounded-t-xl"
+        src={DecorativeImageTop}
+        alt="Top decorative pattern mobile"
+      />
 
       <div className="flex flex-col justify-center gap-y-4 p-2 pb-4">
         <p className="text-[#898384]">
@@ -28,7 +32,11 @@ const index = () => {
         </Button>
       </div>
 
-      <img className="rounded-b-xl" src={DecorativeImageBottom} alt="" />
+      <img
+        className="rounded-b-xl"
+        src={DecorativeImageBottom}
+        alt="Bottom decorative pattern mobile"
+      />
     </div>
   );
 };
