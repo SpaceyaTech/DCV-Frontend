@@ -1,15 +1,15 @@
-import RoseImg from "@/assets/images/rose.png";
-import RoseServing from "@/assets/images/rose-serving-food.png";
-import { Link } from "react-router-dom";
-import { SmileIcon } from "hugeicons-react";
 import HammerIcon from "@/assets/icons/hammer-icon.svg";
+import RoseServing from "@/assets/images/rose-serving-food.png";
+import RoseImg from "@/assets/images/rose.png";
+import { SmileIcon } from "hugeicons-react";
+import { Link } from "react-router-dom";
 
 const TestimonialStaff = () => {
   return (
-    <section className="mx-auto max-w-7xl p-4">
+    <section className="mx-auto my-4 max-w-7xl p-4 sm:my-14">
       <div className="flex flex-col-reverse gap-10 md:flex-row">
         <div className="space-y-10 md:w-1/2">
-          <p className="text-2xl font-bold text-[#BB7300] md:text-3xl">
+          <p className="text-2xl font-bold text-secondary800 md:text-3xl">
             <span className="-mt-10 text-5xl font-bold text-neutrals900">
               “
             </span>
