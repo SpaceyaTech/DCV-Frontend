@@ -1,11 +1,13 @@
 import Header from "@/components/Header";
-import Hero_Card from "@/components/Hero_Card_Section";
+import HeroCardDesktop from "@/components/HeroCardSectionDesktop";
+import HeroCardMobile from "@/components/HeroCardSectionMobile";
+import { isMobile } from "react-device-detect";
 
 export default function Index() {
   return (
     <>
       <Header />
-      <Hero_Card />
+      {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
     </>
   );
 }
