@@ -28,9 +28,11 @@ module.exports = {
         "primary-text": "#006AAC",
         "background-main": "#FDF6ED",
         "neutral-base-white": "#FAFAFA",
+        secondary100: "#FFF3E0",
         secondary200: "#FFE8C2",
         secondary600: "#FFA10C",
         secondary1000: "#6A4100",
+        neutrals900: "#2B2829",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
