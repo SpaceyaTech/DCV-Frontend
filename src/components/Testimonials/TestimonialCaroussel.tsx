@@ -11,15 +11,26 @@ import {
 const testimonials = [
   {
     id: 1,
-    text: "  This home give a future to kids who lost there parents. Let us hope without parents they can have a happy and good future.",
+    text: "This home give a future to kids who lost there parents. Let us hope without parents they can have a happy and good future.",
     author: "John Doe",
   },
   { id: 2, text: "I love using this every day.", author: "Jane Smith" },
   { id: 3, text: "Highly recommend to everyone.", author: "Sam Wilson" },
-  { id: 3, text: "Highly recommend to everyone.", author: "Sam Wilson" },
-
-  { id: 3, text: "Highly recommend to everyone.", author: "Sam Wilson" },
-  { id: 3, text: "Highly recommend to everyone.", author: "Sam Wilson" },
+  {
+    id: 4,
+    text: "A wonderful experience for our family.",
+    author: "Emily Clark",
+  },
+  {
+    id: 5,
+    text: "The staff is incredibly supportive and caring.",
+    author: "Michael Brown",
+  },
+  {
+    id: 6,
+    text: "A place where children can truly thrive.",
+    author: "Sarah Johnson",
+  },
 ];
 
 const TestimonialCaroussel = () => {
@@ -34,6 +45,7 @@ const TestimonialCaroussel = () => {
             <br className="hidden md:block" />
             experience at Diani Children’s Village.
           </p>
+
           {/* show in desktop */}
           <div className="relative hidden w-36 md:flex">
             <CarouselPrevious className="absolute bottom-0 left-0 size-16 border-neutrals300 bg-secondary100" />
@@ -42,39 +54,40 @@ const TestimonialCaroussel = () => {
         </div>
         <div className="mt-10 md:mt-0 md:w-1/2">
           <CarouselContent>
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="space-y-8">
-                <p className="text-2xl font-bold text-secondary800 md:text-3xl">
-                  <span className="-mt-10 text-5xl font-bold text-neutrals900">
-                    “
-                  </span>
-                  <br />
-                  {testimonial.text}
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="relative">
-                    <img
-                      src={JanPoot}
-                      alt="Jan Poot"
-                      className="rounded-full"
-                    />
-                    <img
-                      src={FacebookIcon}
-                      alt="Facebook icon"
-                      className="absolute -right-2 -top-2"
-                    />
+            {testimonials.length > 0 &&
+              testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="space-y-8">
+                  <p className="text-2xl font-bold text-secondary800 md:text-3xl">
+                    <span className="-mt-10 text-5xl font-bold text-neutrals900">
+                      “
+                    </span>
+                    <br />
+                    {testimonial.text}
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="relative">
+                      <img
+                        src={JanPoot}
+                        alt="Jan Poot"
+                        className="rounded-full"
+                      />
+                      <img
+                        src={FacebookIcon}
+                        alt="Facebook icon"
+                        className="absolute -right-2 -top-2"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-2xl font-bold text-neutrals900">
+                        {testimonial.author}
+                      </p>
+                      <p className="text-lg font-normal text-[#726C6C]">
+                        From Belgium
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-2xl font-bold text-neutrals900">
-                      {testimonial.author}
-                    </p>
-                    <p className="text-lg font-normal text-[#726C6C]">
-                      From Belgium
-                    </p>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
+                </CarouselItem>
+              ))}
           </CarouselContent>
         </div>
 
