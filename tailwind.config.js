@@ -28,6 +28,8 @@ module.exports = {
         "primary-text": "#006AAC",
         "background-main": "#FDF6ED",
         "neutral-base-white": "#FAFAFA",
+        primary600: "#1CA8FF",
+        primary1000: "#003D63",
         secondary200: "#FFE8C2",
         secondary600: "#FFA10C",
         secondary1000: "#6A4100",
