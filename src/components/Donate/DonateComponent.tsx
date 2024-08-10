@@ -4,7 +4,7 @@ import heartIcon from "/src/stories/assets/heart-icon.png";
 const DonateComponent = () => {
   return (
     <div className="rounded-t-[96px] bg-background-blue">
-      <div className="pt-12 md:flex md:gap-36 md:py-10">
+      <div className="container pt-12 md:flex md:gap-36 md:py-10">
         <div className="md:ml-32 md:flex md:max-w-[40rem] md:items-center md:gap-8">
           <img
             src={boyImage}
@@ -16,7 +16,7 @@ const DonateComponent = () => {
           </h1>
         </div>
         <div className="space-y-4 md:mt-12">
-          <p className="max-w-md text-center font-santoshi text-lg font-normal text-white md:text-left lg:max-w-[20rem]">
+          <p className="px-4 text-center font-santoshi text-lg font-normal text-white md:px-0 md:text-left lg:max-w-[20rem]">
             Any amount, whether big or small, means the world to us. By
             donating, you're investing in their hopes and dreams.
           </p>
