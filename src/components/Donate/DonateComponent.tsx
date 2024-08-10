@@ -15,8 +15,8 @@ const DonateComponent = () => {
             Are you ready to be part of their success story?
           </h1>
         </div>
-        <div className="md:mt-12">
-          <p className="text-center font-santoshi text-lg font-normal text-white md:text-left lg:max-w-[20rem]">
+        <div className="space-y-4 md:mt-12">
+          <p className="max-w-md text-center font-santoshi text-lg font-normal text-white md:text-left lg:max-w-[20rem]">
             Any amount, whether big or small, means the world to us. By
             donating, you're investing in their hopes and dreams.
           </p>
