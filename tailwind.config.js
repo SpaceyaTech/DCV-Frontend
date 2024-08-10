@@ -27,6 +27,7 @@ module.exports = {
         "primary-blue": "#D9F0FF",
         "primary-text": "#006AAC",
         "background-main": "#FDF6ED",
+        "background-blue": "#0097F5",
         "neutral-base-white": "#FAFAFA",
         secondary200: "#FFE8C2",
         secondary600: "#FFA10C",
