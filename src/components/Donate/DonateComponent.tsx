@@ -1,9 +1,11 @@
 import React from "react";
 import boyImage from "/src/stories/assets/boy-in-hat.png";
 import heartIcon from "/src/stories/assets/heart-icon.png";
+import DonationsMobile from "/src/stories/assets/donations-mobile.png";
+
 const DonateComponent = () => {
   return (
-    <div className="rounded-t-[96px] bg-background-blue">
+    <div className="relative rounded-t-[96px] bg-background-blue pb-32 md:pb-0">
       <div className="container pt-12 md:flex md:gap-36 md:py-10">
         <div className="md:ml-32 md:flex md:max-w-[40rem] md:items-center md:gap-8">
           <img
@@ -26,6 +28,13 @@ const DonateComponent = () => {
             </h1>
             <img src={heartIcon} alt="heart icon" />
           </button>
+        </div>
+        <div className="absolute block w-full py-10 md:hidden">
+          <img
+            src={DonationsMobile}
+            alt="dotations call to action"
+            className="translate-x-1/2"
+          />
         </div>
       </div>
     </div>
