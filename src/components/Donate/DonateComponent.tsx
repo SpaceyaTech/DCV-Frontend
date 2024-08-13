@@ -1,10 +1,12 @@
 import React from "react";
 import boyImage from "/src/stories/assets/boy-in-hat.png";
 import heartIcon from "/src/stories/assets/heart-icon.png";
+import DonationsMobile from "/src/stories/assets/donations-mobile.png";
+
 const DonateComponent = () => {
   return (
-    <div className="rounded-t-[96px] bg-background-blue">
-      <div className="pt-12 md:flex md:gap-36 md:py-10">
+    <div className="relative rounded-t-[96px] bg-background-blue pb-32 md:pb-0">
+      <div className="container pt-12 md:flex md:gap-36 md:py-10">
         <div className="md:ml-32 md:flex md:max-w-[40rem] md:items-center md:gap-8">
           <img
             src={boyImage}
@@ -15,8 +17,8 @@ const DonateComponent = () => {
             Are you ready to be part of their success story?
           </h1>
         </div>
-        <div className="md:mt-12">
-          <p className="text-center font-santoshi text-lg font-normal text-white md:text-left lg:max-w-[20rem]">
+        <div className="space-y-4 md:mt-12">
+          <p className="px-4 text-center font-santoshi text-lg font-normal text-white md:px-0 md:text-left lg:max-w-[20rem]">
             Any amount, whether big or small, means the world to us. By
             donating, you're investing in their hopes and dreams.
           </p>
@@ -26,6 +28,13 @@ const DonateComponent = () => {
             </h1>
             <img src={heartIcon} alt="heart icon" />
           </button>
+        </div>
+        <div className="absolute block w-full py-10 md:hidden">
+          <img
+            src={DonationsMobile}
+            alt="dotations call to action"
+            className="translate-x-1/2"
+          />
         </div>
       </div>
     </div>

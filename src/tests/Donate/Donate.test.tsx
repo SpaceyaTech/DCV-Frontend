@@ -3,10 +3,9 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import DonateComponent from "@/components/Donate/DonateComponent";
 
-// Test component is rendering correctly
+// Test component has correct text & image
 // Test images contains alt text
-// Check for mobile responsiveness
-// Ensure donate button works as expected
+// Check for mobile responsiveness *on hold*
 describe("DonateComponent", () => {
   it("renders the component correctly", () => {
     render(<DonateComponent />);
@@ -41,21 +40,4 @@ describe("DonateComponent", () => {
       expect(image.getAttribute("alt")).not.toBe("");
     });
   });
-
-  //   it('has a functioning donate button', async () => {
-  //     const mockDonateFunction = vi.fn();
-  //     render(<DonateComponent onDonate={mockDonateFunction} />);
-
-  //     const donateButton = screen.getByRole('button', { name: /donate to dcv today/i });
-  //     await userEvent.click(donateButton);
-
-  //     expect(mockDonateFunction).toHaveBeenCalledTimes(1);
-  //   });
-
-  // it('is responsive on mobile devices', () => {
-  //   const { container } = render(<DonateComponent />);
-  //   // Adjust based on your actual CSS implementation
-  //   expect(container.firstChild).toHaveStyle('w-full');
-
-  // });
 });
