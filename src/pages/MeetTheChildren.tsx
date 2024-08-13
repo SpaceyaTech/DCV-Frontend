@@ -10,16 +10,16 @@ function MeetTheChildren() {
   return (
     <main className="space-y-12">
       <Header />
-      <section className="container mx-auto flex w-full max-w-screen-xl flex-col items-center gap-16 py-12 font-lato">
+      <section className="container mx-auto flex w-full max-w-screen-xl flex-col items-center gap-16 font-lato sm:px-4 md:py-6 lg:py-12">
         <div className="flex w-full max-w-xl flex-col items-center gap-12 text-center">
-          <h3 className="text-[32px] font-bold leading-10">
+          <h3 className="text-2xl font-bold leading-10 lg:text-[32px]">
             Meet our vibrant, lovely and amazing kids from all over Africa
           </h3>
 
-          <div className="flex w-full items-center justify-between gap-3 rounded-full bg-white px-3 py-2 shadow shadow-primary-main">
+          <div className="no-scrollbar flex w-full items-center justify-between gap-1.5 overflow-x-scroll rounded-full border-primary-main bg-white px-2 py-2 md:gap-3 md:border md:px-3 md:shadow md:shadow-primary-main">
             <button
               className={cn(
-                "rounded-full px-8 py-2 text-base text-primary-main transition-colors duration-500 ease-in hover:bg-primary-main hover:text-white",
+                "text-nowrap rounded-full px-3 py-1.5 text-base text-primary-main transition-colors duration-500 ease-in hover:bg-primary-main hover:text-white md:py-2 lg:px-8",
                 ageBracket === "Age 1-5" && "bg-primary-main text-white",
               )}
               onClick={() => setAgeBracket("Age 1-5")}
@@ -29,7 +29,7 @@ function MeetTheChildren() {
 
             <button
               className={cn(
-                "rounded-full px-8 py-2 text-base text-primary-main transition-colors duration-500 ease-in hover:bg-primary-main hover:text-white",
+                "text-nowrap rounded-full px-3 py-1.5 text-base text-primary-main transition-colors duration-500 ease-in hover:bg-primary-main hover:text-white md:py-2 lg:px-8",
                 ageBracket === "Age 6-12" && "bg-primary-main text-white",
               )}
               onClick={() => setAgeBracket("Age 6-12")}
@@ -39,7 +39,7 @@ function MeetTheChildren() {
 
             <button
               className={cn(
-                "rounded-full px-8 py-2 text-base text-primary-main transition-colors duration-500 ease-in hover:bg-primary-main hover:text-white",
+                "text-nowrap rounded-full px-3 py-1.5 text-base text-primary-main transition-colors duration-500 ease-in hover:bg-primary-main hover:text-white md:py-2 lg:px-8",
                 ageBracket === "Age 13-18+" && "bg-primary-main text-white",
               )}
               onClick={() => setAgeBracket("Age 13-18+")}

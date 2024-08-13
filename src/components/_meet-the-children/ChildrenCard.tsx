@@ -14,10 +14,10 @@ interface ChidrenCardProps {
 
 function ChildrenCard({ image, list }: ChidrenCardProps) {
   return (
-    <div className="flex items-center gap-8 px-8">
-      <img src={image} alt="age 1-5" className="mr-6 object-cover" />
+    <div className="flex flex-col items-center gap-4 md:px-8 lg:flex-row lg:gap-8">
+      <img src={image} alt="age 1-5" className="object-cover lg:mr-6" />
 
-      <div className="space-y-4">
+      <div className="flex flex-col space-y-6">
         <ul className="flex list-disc flex-col gap-6 text-base font-normal">
           {list.map(({ id, title, description }) => (
             <li className="marker-size" key={id}>
@@ -29,7 +29,7 @@ function ChildrenCard({ image, list }: ChidrenCardProps) {
 
         <Button
           size="default"
-          className="flex items-center gap-2 rounded-full bg-primary-main text-base font-medium text-white"
+          className="ms:self-start flex items-center gap-2 self-center rounded-full bg-primary-main text-base font-medium text-white"
         >
           Support us today{" "}
           <img src={heartIcon} alt="heart" loading="lazy" className="w-4" />
