@@ -7,7 +7,7 @@ import path from "path";
 export default defineConfig({
   server: {
     //@ts-ignore
-    https: false,
+    https: true,
     port: 5173,
   },
   test: {
