@@ -32,6 +32,7 @@ module.exports = {
         "primary-1000": "#003D63",
         "secondary-main": "#FFD085",
         "background-main": "#FDF6ED",
+        "background-blue": "#0097F5",
         "neutral-base-white": "#FAFAFA",
         primary600: "#1CA8FF",
         primary1000: "#003D63",

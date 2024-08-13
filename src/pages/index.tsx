@@ -1,3 +1,4 @@
+import DonateComponent from "@/components/Donate/DonateComponent";
 import Header from "@/components/Header";
 import HeroCardDesktop from "@/components/HeroCardSectionDesktop";
 import HeroCardMobile from "@/components/HeroCardSectionMobile";
@@ -14,6 +15,7 @@ export default function Index() {
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <NewsAlert />
+      <DonateComponent />
       <Graduation />
       <Gallery />
       <TestimonialCaroussel />
