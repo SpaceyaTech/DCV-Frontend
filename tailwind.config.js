@@ -33,6 +33,8 @@ module.exports = {
         "secondary-main": "#FFD085",
         "background-main": "#FDF6ED",
         "neutral-base-white": "#FAFAFA",
+        primary600: "#1CA8FF",
+        primary1000: "#003D63",
         secondary100: "#FFF3E0",
         "neutral-500": "#898384",
         secondary200: "#FFE8C2",

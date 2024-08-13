@@ -4,6 +4,8 @@ import HeroCardMobile from "@/components/HeroCardSectionMobile";
 import { isMobile } from "react-device-detect";
 
 import NewsAlert from "@/components/NewsAlert/NewsAlert";
+import Graduation from "@/components/Gallery/Graduation";
+import Gallery from "@/components/Gallery/Gallery";
 import TestimonialCaroussel from "@/components/Testimonials/TestimonialCaroussel";
 import TestimonialStaff from "@/components/Testimonials/TestimonialStaff";
 export default function Index() {
@@ -12,6 +14,8 @@ export default function Index() {
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <NewsAlert />
+      <Graduation />
+      <Gallery />
       <TestimonialCaroussel />
       <TestimonialStaff />
     </>
