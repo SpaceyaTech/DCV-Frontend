@@ -66,6 +66,11 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .marker-size::marker {
+    @apply text-secondary600;
+    font-size: 1.8rem;
+  }
 }
 body {
   background-color: #fdf6ed;
