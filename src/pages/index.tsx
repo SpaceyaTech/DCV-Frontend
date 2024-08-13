@@ -10,6 +10,7 @@ import Graduation from "@/components/Gallery/Graduation";
 import Gallery from "@/components/Gallery/Gallery";
 import TestimonialCaroussel from "@/components/Testimonials/TestimonialCaroussel";
 import TestimonialStaff from "@/components/Testimonials/TestimonialStaff";
+
 export default function Index() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Index() {
       <Gallery />
       <TestimonialCaroussel />
       <TestimonialStaff />
+      <Footer />
     </>
   );
 }
