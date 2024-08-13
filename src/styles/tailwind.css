@@ -108,3 +108,10 @@ body {
   font-weight: 700; /* Bold */
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Lato";
+  src: url("@/assets/fonts/Lato/Lato-Bold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
