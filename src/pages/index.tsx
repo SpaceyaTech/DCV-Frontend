@@ -17,12 +17,11 @@ export default function Index() {
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <NewsAlert />
-      <DonateComponent />
-      <Footer />
       <Graduation />
       <Gallery />
       <TestimonialCaroussel />
       <TestimonialStaff />
+      <DonateComponent />
       <Footer />
     </>
   );
