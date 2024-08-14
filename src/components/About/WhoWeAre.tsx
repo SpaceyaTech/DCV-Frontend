@@ -3,7 +3,7 @@ import AboutHero2 from "@/assets/images/about/about-hero-2.png";
 
 const WhoWeAre = () => {
   return (
-    <section className="container mt-12 space-y-24 md:mt-24">
+    <section className="container mt-12 space-y-6 md:mt-24 md:space-y-24">
       {/* Who we Are */}
       <div className="flex flex-col justify-between sm:flex-row">
         <div className="space-y-8 md:w-1/2">
