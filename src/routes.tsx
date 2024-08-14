@@ -3,6 +3,7 @@ import { type RouteObject } from "react-router-dom";
 
 const Index = lazy(() => import("@/pages/index"));
 const Notfound = lazy(() => import("@/pages/404"));
+const Donate = lazy(() => import("@/pages/donate"));
 
 export const routes: Array<RouteObject> = [
   {
@@ -18,6 +19,14 @@ export const routes: Array<RouteObject> = [
     element: (
       <Suspense>
         <Notfound />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/donate",
+    element: (
+      <Suspense>
+        <Donate />
       </Suspense>
     ),
   },
