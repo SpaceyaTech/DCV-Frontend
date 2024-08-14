@@ -21,8 +21,8 @@ const WhyDonate = () => {
           </p>
           <ul className="space-y-3 text-lg text-primary-1000">
             Your donations help us:
-            <li className="flex items-start gap-1 pt-3">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1 pt-3" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
@@ -30,8 +30,8 @@ const WhyDonate = () => {
               </div>
               <div>Provide nutritious meals and clean water.</div>
             </li>
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
@@ -39,8 +39,8 @@ const WhyDonate = () => {
               </div>
               <div>Offer quality education and school supplies.</div>
             </li>
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
@@ -48,8 +48,8 @@ const WhyDonate = () => {
               </div>
               <div>Ensure access to healthcare and medical services.</div>
             </li>
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
@@ -82,8 +82,8 @@ const WhyDonate = () => {
             provide ongoing support
           </p>
           <ul className="space-y-3 text-lg text-primary-1000">
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
@@ -95,8 +95,8 @@ const WhyDonate = () => {
               </div>
             </li>
 
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
@@ -107,8 +107,8 @@ const WhyDonate = () => {
               </div>
             </li>
 
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}

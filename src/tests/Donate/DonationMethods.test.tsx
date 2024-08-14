@@ -77,6 +77,13 @@ describe("DonationMethods component", () => {
     expect(screen.getByAltText("Donate Hero 1")).toBeInTheDocument();
   });
 
+  it("should render all list items", () => {
+    render(<DonationMethods />);
+
+    const ariaHiddenElements = screen.getAllByTestId("list-item");
+    expect(ariaHiddenElements.length).toBe(3);
+  });
+
   it("has a link to GlobalGiving.org", () => {
     render(<DonationMethods />);
 

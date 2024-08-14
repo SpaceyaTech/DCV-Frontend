@@ -134,8 +134,8 @@ const DonationMethods = () => {
             made sure everyone can help us in their own capacity
           </p>
           <ul className="space-y-3 text-lg text-primary-1000">
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
@@ -146,8 +146,8 @@ const DonationMethods = () => {
               </div>
             </li>
 
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
@@ -158,8 +158,8 @@ const DonationMethods = () => {
               </div>
             </li>
 
-            <li className="flex items-start gap-1">
-              <div className="mt-1 flex items-center">
+            <li className="flex items-start gap-1" data-testid="list-item">
+              <div className="mt-1 flex items-center" aria-hidden="true">
                 <CheckmarkCircle02Icon
                   className="mb-1 text-primary-1000"
                   size={18}
