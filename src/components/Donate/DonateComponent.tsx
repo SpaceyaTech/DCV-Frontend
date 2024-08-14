@@ -1,7 +1,6 @@
-import React from "react";
 import boyImage from "/src/stories/assets/boy-in-hat.png";
-import heartIcon from "/src/stories/assets/heart-icon.png";
 import DonationsMobile from "/src/stories/assets/donations-mobile.png";
+import heartIcon from "/src/stories/assets/heart-icon.png";
 
 const DonateComponent = () => {
   return (
