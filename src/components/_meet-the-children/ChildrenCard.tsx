@@ -7,7 +7,7 @@ interface ListItem {
   description: string;
 }
 
-interface ChidrenCardProps {
+export interface ChidrenCardProps {
   image: string;
   list: ListItem[];
 }
