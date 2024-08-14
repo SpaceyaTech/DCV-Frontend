@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom";
+
 const Navlinks = () => {
   const navLinks = [
-    { to: "", text: "Home" },
-    { to: "about", text: "About" },
-    { to: "projects", text: "Our projects" },
-    { to: "news", text: "" },
-    { to: "staff", text: "Meet our staff" },
-    { to: "children", text: "Meet our children" },
+    { to: "/", text: "Home" },
+    { to: "/about", text: "About" },
+    { to: "/projects", text: "Our projects" },
+    { to: "/news", text: "" },
+    { to: "/staff", text: "Meet our staff" },
+    { to: "/children", text: "Meet our children" },
   ];
+
   return (
     <div className="hidden items-center gap-6 font-santoshi font-normal lg:flex lg:gap-6">
       {navLinks.map((link) => (
