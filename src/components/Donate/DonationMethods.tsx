@@ -35,7 +35,7 @@ const DonationMethods = () => {
           <div className="flex flex-col items-start gap-2 rounded-2xl border-4 border-[#FAA01480]/50 bg-white p-4 md:flex-row md:items-center">
             <img
               src={NCBABankLogo}
-              alt="NCBA Bank Logo"
+              alt="NCBA Bank KSH Logo"
               className="h-40 rounded-2xl"
             />
             <div>
@@ -55,7 +55,7 @@ const DonationMethods = () => {
           <div className="flex flex-col items-start gap-2 rounded-2xl border-4 border-[#FAA01480]/50 bg-white p-4 md:flex-row md:items-center">
             <img
               src={NCBABankLogo}
-              alt="NCBA Bank Logo"
+              alt="NCBA Bank EUR Logo"
               className="h-40 rounded-2xl"
             />
             <div>
