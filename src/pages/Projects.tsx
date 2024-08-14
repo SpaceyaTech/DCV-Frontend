@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <>
       <Header />
-      <div className="mx-10 my-10 flex flex-col items-center justify-center sm:mx-40 sm:items-start">
+      <div className="m-10 flex flex-col items-center justify-center sm:mx-40 sm:my-20 sm:items-start">
         <div className="sm:max-w-[650px]">
           <h1 className="flex items-center text-lg font-semibold text-primary-text sm:text-xl">
             <span className="mr-3 inline-block w-8 border-t-2 border-gray-800 sm:w-14"></span>
@@ -57,7 +57,7 @@ const Projects = () => {
                 className="hidden sm:-mt-16 sm:block"
               />
             </div>
-            <div className="flex gap-4 sm:-mt-24">
+            <div className="flex gap-4 xl:-mt-24">
               <img src={Ishmael} alt="Ishmael image" />
               <div>
                 <p className="text-lg font-semibold text-primary1000">

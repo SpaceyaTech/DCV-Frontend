@@ -2,6 +2,7 @@ import React from "react";
 import boyImage from "/src/stories/assets/boy-in-hat.png";
 import heartIcon from "/src/stories/assets/heart-icon.png";
 import DonationsMobile from "/src/stories/assets/donations-mobile.png";
+import DonationsDesktop from "@/stories/assets/dontations-desktop.png";
 
 interface DonateComponentProps {
   isIndexPage: boolean;
@@ -14,7 +15,16 @@ const DonateComponent: React.FC<DonateComponentProps> = ({ isIndexPage }) => {
         isIndexPage ? "bg-background-blue" : "bg-neutral-base-white"
       }`}
     >
-      <div className="container pt-12 md:flex md:gap-36 md:py-10">
+      <div className="container md:flex md:gap-36 md:py-10">
+        {!isIndexPage && (
+          <div className="mt-32 block w-full py-10 md:hidden">
+            <img
+              src={DonationsDesktop}
+              alt="donations call to action"
+              className="-mt-28 size-44 translate-x-1/2"
+            />
+          </div>
+        )}
         <div className="md:ml-32 md:flex md:max-w-[40rem] md:items-center md:gap-8">
           <img
             src={boyImage}
@@ -51,13 +61,15 @@ const DonateComponent: React.FC<DonateComponentProps> = ({ isIndexPage }) => {
             <img src={heartIcon} alt="heart icon" />
           </button>
         </div>
-        <div className="absolute block w-full py-10 md:hidden">
-          <img
-            src={DonationsMobile}
-            alt="dotations call to action"
-            className="translate-x-1/2"
-          />
-        </div>
+        {isIndexPage && (
+          <div className="absolute block w-full py-10 md:hidden">
+            <img
+              src={DonationsMobile}
+              alt="donations call to action"
+              className="translate-x-1/2"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
