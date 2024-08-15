@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { type RouteObject } from "react-router-dom";
 
+const MeetTheChildren = lazy(() => import("@/pages/MeetTheChildren"));
 const Index = lazy(() => import("@/pages/index"));
 const Projects = lazy(() => import("@/pages/Projects"));
 const Notfound = lazy(() => import("@/pages/404"));
@@ -13,6 +14,22 @@ export const routes: Array<RouteObject> = [
     element: (
       <Suspense>
         <Index />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/children",
+    element: (
+      <Suspense>
+        <MeetTheChildren />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <Suspense>
+        <About />
       </Suspense>
     ),
   },
@@ -37,14 +54,6 @@ export const routes: Array<RouteObject> = [
     element: (
       <Suspense>
         <Notfound />
-      </Suspense>
-    ),
-  },
-  {
-    path: "/about",
-    element: (
-      <Suspense>
-        <About />
       </Suspense>
     ),
   },

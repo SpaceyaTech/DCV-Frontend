@@ -66,6 +66,20 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .marker-size::marker {
+    @apply text-secondary600;
+    font-size: 1.8rem;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 body {
   background-color: #fdf6ed;
@@ -106,5 +120,12 @@ body {
     url("@/assets/fonts/Satoshi/WEB/fonts/Satoshi-Bold.woff2") format("woff2"),
     url("@/assets/fonts/Satoshi/WEB/fonts/Satoshi-Bold.woff") format("woff");
   font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("@/assets/fonts/Lato/Lato-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
