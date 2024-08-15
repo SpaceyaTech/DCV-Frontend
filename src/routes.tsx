@@ -5,6 +5,7 @@ const MeetTheChildren = lazy(() => import("@/pages/MeetTheChildren"));
 const Index = lazy(() => import("@/pages/index"));
 const Projects = lazy(() => import("@/pages/Projects"));
 const Notfound = lazy(() => import("@/pages/404"));
+const Donate = lazy(() => import("@/pages/donate"));
 const About = lazy(() => import("@/pages/about"));
 const MeetTheTeam = lazy(() => import("@/pages/MeetTheTeam"));
 
@@ -46,6 +47,14 @@ export const routes: Array<RouteObject> = [
     element: (
       <Suspense>
         <MeetTheTeam />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/donate",
+    element: (
+      <Suspense>
+        <Donate />
       </Suspense>
     ),
   },
