@@ -24,7 +24,7 @@ const NavBarMobile = () => {
         <DrawerTrigger>
           <button
             type="button"
-            className="flex items-center gap-2 rounded-md border bg-neutral-base-white px-4 py-3 shadow-xl lg:hidden"
+            className="menuBtn flex items-center gap-2 rounded-md border bg-neutral-base-white px-4 py-3 shadow-xl lg:hidden"
           >
             <p className="font-bold">Menu</p>
             <Menu01Icon data-testid="menu-icon" size={15} color="black" />

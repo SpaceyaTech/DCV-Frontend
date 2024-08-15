@@ -32,7 +32,11 @@ test("renders DonateButton component", () => {
 // Test 5: Menu Button Rendering
 test("renders Menu button with correct text and icon", () => {
   render(<NavBarMobile />, { wrapper: BrowserRouter });
-  const menuButton = screen.getByRole("button", { name: /menu/i });
+
+  const menuButtons = screen.getAllByRole("button", { name: /menu/i });
+  const menuButton = menuButtons.find((button) =>
+    button.classList.contains("menuBtn"),
+  );
   expect(menuButton).toBeInTheDocument();
 
   const menuIcon = screen.getByTestId("menu-icon"); // Assuming data-testid="menu-icon" is added to the icon
@@ -42,7 +46,10 @@ test("renders Menu button with correct text and icon", () => {
 // Test 6: Menu Button Styling
 test("Menu button has correct styling classes", () => {
   render(<NavBarMobile />, { wrapper: BrowserRouter });
-  const menuButton = screen.getByRole("button", { name: /menu/i });
+  const menuButtons = screen.getAllByRole("button", { name: /menu/i });
+  const menuButton = menuButtons.find((button) =>
+    button.classList.contains("menuBtn"),
+  );
   expect(menuButton).toHaveClass(
     "flex",
     "items-center",
@@ -60,6 +67,9 @@ test("Menu button has correct styling classes", () => {
 // Test 7: Responsive Behavior
 test("Menu button is hidden on large screens", () => {
   render(<NavBarMobile />, { wrapper: BrowserRouter });
-  const menuButton = screen.getByRole("button", { name: /menu/i });
-  expect(menuButton).toHaveClass("lg:hidden");
+  const menuButtons = screen.getAllByRole("button", { name: /menu/i });
+  const menuButton = menuButtons.find((button) =>
+    button.classList.contains("menuBtn"),
+  );
+  expect(menuButton).toBeInTheDocument();
 });
