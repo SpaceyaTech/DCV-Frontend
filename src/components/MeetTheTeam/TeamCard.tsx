@@ -9,7 +9,7 @@ export interface StaffMember {
 function TeamCard({ name, role, bg, image }: StaffMember) {
   return (
     <div
-      className="flex h-96 w-full max-w-72 flex-col overflow-hidden rounded-xl bg-primary-main"
+      className="flex h-[424px] w-full flex-col overflow-hidden rounded-xl bg-primary-main sm:h-96 sm:max-w-72"
       style={{ backgroundColor: bg }}
     >
       <div className="h-4/5">

@@ -18,10 +18,10 @@ function MeetTheTeam() {
   return (
     <main className="space-y-12">
       <Header />
-      <section className="container mx-auto flex max-w-[90%] flex-col items-center gap-10 md:pb-6 lg:pb-12">
-        <h1 className="text-5xl font-bold">Meet our Staff</h1>
+      <section className="mx-auto flex flex-col items-center gap-10 lg:container md:pb-6 lg:max-w-[90%] lg:pb-12">
+        <h1 className="text-3xl font-bold lg:text-5xl">Meet our Staff</h1>
 
-        <div className="flex w-full flex-col items-center gap-6 md:gap-10">
+        <div className="flex w-full flex-col items-center gap-6 px-4 md:gap-10">
           <div className="grid w-full grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:w-1/2 lg:gap-12">
             {staff.slice(0, 2).map(({ id, name, role, bg, image }) => (
               <TeamCard
