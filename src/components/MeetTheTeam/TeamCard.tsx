@@ -13,7 +13,12 @@ function TeamCard({ name, role, bg, image }: StaffMember) {
       style={{ backgroundColor: bg }}
     >
       <div className="h-3/4">
-        <img src={image} alt={name} className="h-72 w-full object-cover" />
+        <img
+          src={image}
+          alt={name}
+          className="h-72 w-full object-cover"
+          loading="lazy"
+        />
       </div>
       <div
         className="mt-3.5 h-1/4 rounded-b-xl border border-primary-main bg-white"
