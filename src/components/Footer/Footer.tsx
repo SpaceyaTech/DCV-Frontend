@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "/src/stories/assets/logo.png";
 import FacebookIcon from "/src/stories/assets/facebook.png";
 import DonationsDesktop from "/src/stories/assets/dontations-desktop.png";
+import FooterBackground from "/src/stories/assets/footer-bg.png";
+import FooterBGMobile from "/src/stories/assets/footer-bgmobile.png";
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="container py-24">
-      <div className="lg:grid-col-3 lg:flex">
+    <footer className="pt-24">
+      <div className="lg:grid-col-3 container lg:flex">
         <div className="space-y-4 lg:w-1/2">
           <div>
             <div className="flex items-center gap-4">
@@ -53,13 +69,26 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 text-center">
+      <div className="relative mt-12 text-center">
         <h1>
           Copyright © Diani Children’s Home, 2024. Designed with ❤️ by
           In4lytics
         </h1>
       </div>
-    </div>
+      {isMobile ? (
+        <img
+          src={FooterBGMobile}
+          alt="mobile footer background image"
+          className="w-full"
+        />
+      ) : (
+        <img
+          src={FooterBackground}
+          alt="footer background image"
+          className="container"
+        />
+      )}
+    </footer>
   );
 };
 
