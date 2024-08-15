@@ -16,11 +16,11 @@ export default function Index() {
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <NewsAlert />
-      <DonateComponent isIndexPage={true} />
       <Graduation />
       <Gallery />
       <TestimonialCaroussel />
       <TestimonialStaff />
+      <DonateComponent isIndexPage={true} />
       <Footer />
     </>
   );
