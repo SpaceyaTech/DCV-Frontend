@@ -13,12 +13,14 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
+        xl: "1280px",
         "2xl": "1400px",
       },
     },
     extend: {
       fontFamily: {
         santoshi: ["Santoshi", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
