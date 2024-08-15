@@ -22,7 +22,7 @@ function MeetTheTeam() {
         <h1 className="text-5xl font-bold">Meet our Staff</h1>
 
         <div className="flex w-full flex-col items-center gap-6 md:gap-10">
-          <div className="grid w-full grid-cols-1 justify-items-center gap-8 border md:grid-cols-2 lg:w-1/2 lg:gap-12">
+          <div className="grid w-full grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:w-1/2 lg:gap-12">
             {staff.slice(0, 2).map(({ id, name, role, bg, image }) => (
               <TeamCard
                 key={id}
