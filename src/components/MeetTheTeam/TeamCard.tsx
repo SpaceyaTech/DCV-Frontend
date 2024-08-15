@@ -12,16 +12,16 @@ function TeamCard({ name, role, bg, image }: StaffMember) {
       className="flex h-96 w-full max-w-72 flex-col overflow-hidden rounded-xl bg-primary-main"
       style={{ backgroundColor: bg }}
     >
-      <div className="h-3/4">
+      <div className="h-4/5">
         <img
           src={image}
           alt={name}
-          className="h-72 w-full object-cover"
+          className="size-full object-cover"
           loading="lazy"
         />
       </div>
       <div
-        className="mt-3.5 h-1/4 rounded-b-xl border border-primary-main bg-white"
+        className="lg:mt-2.0 mt-1.5 h-1/5 rounded-b-xl border border-primary-main bg-white"
         style={{ borderColor: bg }}
       >
         <div className="flex flex-col p-2.5">
