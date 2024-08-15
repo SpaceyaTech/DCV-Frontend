@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import HeroCardDesktop from "@/components/HeroCardSectionDesktop";
 import HeroCardMobile from "@/components/HeroCardSectionMobile";
 import { isMobile } from "react-device-detect";
-
 import NewsAlert from "@/components/NewsAlert/NewsAlert";
 import Graduation from "@/components/Gallery/Graduation";
 import Gallery from "@/components/Gallery/Gallery";
@@ -17,12 +16,11 @@ export default function Index() {
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <NewsAlert />
-      <DonateComponent />
-      <Footer />
       <Graduation />
       <Gallery />
       <TestimonialCaroussel />
       <TestimonialStaff />
+      <DonateComponent isIndexPage={true} />
       <Footer />
     </>
   );
