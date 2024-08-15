@@ -17,7 +17,7 @@ function ChildrenCard({ image, list }: ChidrenCardProps) {
     <div className="flex flex-col items-center gap-4 md:px-8 lg:flex-row lg:gap-8">
       <img src={image} alt="age 1-5" className="object-cover lg:mr-6" />
 
-      <div className="flex flex-col space-y-6">
+      <div className="flex flex-col gap-6">
         <ul className="flex list-none flex-col gap-6 text-base font-normal">
           {list.map(({ id, title, description }) => (
             <li className="flex gap-3" key={id}>
@@ -48,7 +48,7 @@ function ChildrenCard({ image, list }: ChidrenCardProps) {
 
         <Button
           size="default"
-          className="flex items-center gap-2 self-center rounded-full bg-primary-main text-base font-medium text-white sm:self-start"
+          className="mt-8 flex items-center gap-2 self-center rounded-full bg-primary-main text-base font-medium text-white lg:mt-0 lg:self-start"
         >
           Support us today{" "}
           <img src={heartIcon} alt="heart" loading="lazy" className="w-4" />
