@@ -17,6 +17,7 @@ export default function Index() {
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <NewsAlert />
+      <DonateComponent />
       <Graduation />
       <Gallery />
       <TestimonialCaroussel />
