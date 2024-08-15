@@ -19,6 +19,14 @@ export const routes: Array<RouteObject> = [
     ),
   },
   {
+    path: "/about",
+    element: (
+      <Suspense>
+        <About />
+      </Suspense>
+    ),
+  },
+  {
     path: "/children",
     element: (
       <Suspense>
@@ -27,10 +35,10 @@ export const routes: Array<RouteObject> = [
     ),
   },
   {
-    path: "/about",
+    path: "/donate",
     element: (
       <Suspense>
-        <About />
+        <Donate />
       </Suspense>
     ),
   },
@@ -47,14 +55,6 @@ export const routes: Array<RouteObject> = [
     element: (
       <Suspense>
         <MeetTheTeam />
-      </Suspense>
-    ),
-  },
-  {
-    path: "/donate",
-    element: (
-      <Suspense>
-        <Donate />
       </Suspense>
     ),
   },
