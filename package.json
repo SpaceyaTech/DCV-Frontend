@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "vitest run && turbo vite.build",
+    "build": "vite build",
     "build-storybook": "storybook build",
     "coverage": "vitest run --coverage",
     "dev": "vite",
