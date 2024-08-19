@@ -16,7 +16,7 @@ import { Button } from "../ui/button";
 
 const NavBarMobile = () => {
   return (
-    <nav className="mx-auto mt-4 flex w-full max-w-[90%] items-center justify-between rounded-lg bg-white p-2 shadow-2xl">
+    <nav className="relative top-3 mx-auto mt-4 flex w-full max-w-[90%] items-center justify-between rounded-xl bg-white p-2 shadow-2xl">
       <img src={logo} alt="logo" loading="lazy" className="md:w-14 lg:w-16" />
       <Navlinks />
       <DonateButton />

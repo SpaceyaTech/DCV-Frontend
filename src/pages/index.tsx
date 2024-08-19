@@ -9,10 +9,11 @@ import Graduation from "@/components/Gallery/Graduation";
 import Gallery from "@/components/Gallery/Gallery";
 import TestimonialCaroussel from "@/components/Testimonials/TestimonialCaroussel";
 import TestimonialStaff from "@/components/Testimonials/TestimonialStaff";
+import InfoHeader from "@/components/Header/InfoHeader";
 
 export default function Index() {
   return (
-    <>
+    <main className="container font-santoshi 2xl:max-w-[95%]">
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <NewsAlert />
@@ -22,6 +23,6 @@ export default function Index() {
       <TestimonialStaff />
       <DonateComponent isIndexPage={true} />
       <Footer />
-    </>
+    </main>
   );
 }
