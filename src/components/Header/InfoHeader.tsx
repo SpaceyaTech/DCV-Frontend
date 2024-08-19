@@ -7,7 +7,7 @@ import React from "react";
 const InfoHeader = () => {
   return (
     <div className="grid grid-rows-1 md:grid-cols-2">
-      <div className="flex items-center gap-6 bg-transparent md:gap-6 lg:bg-primary-100">
+      <div className="flex items-center gap-6 bg-primary-100 md:gap-6">
         <img src={vettedImage} alt="vetted" />
         <p className="flex items-center gap-4 text-primary-text">
           Vetted Organization - GlobalGiving 2017
