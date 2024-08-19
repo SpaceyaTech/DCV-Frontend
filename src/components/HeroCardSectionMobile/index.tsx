@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const index = () => {
   return (
-    <div className="mx-auto w-[90%] rounded-xl bg-white text-base">
+    <div className="relative bottom-32 mx-auto w-[90%] rounded-xl bg-white text-base">
       <img
         className="rounded-t-xl"
         src={DecorativeImageTop}
