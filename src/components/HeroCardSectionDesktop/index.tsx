@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 const index = () => {
   return (
-    <div className="mx-auto w-fit rounded-xl bg-white text-base">
+    <div className="relative bottom-32 mx-auto w-fit rounded-xl bg-white text-base">
       <div className="flex flex-col items-center justify-center gap-y-4 text-center">
         <img
           className="rounded-t-xl"

@@ -22,6 +22,10 @@ module.exports = {
         santoshi: ["Santoshi", "sans-serif"],
         lato: ["Lato", "sans-serif"],
       },
+      backgroundImage: {
+        "hero-background": "url('@/assets/header-image.svg')",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
