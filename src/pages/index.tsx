@@ -13,7 +13,7 @@ import InfoHeader from "@/components/Header/InfoHeader";
 
 export default function Index() {
   return (
-    <>
+    <section className="relative">
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <NewsAlert />
@@ -23,6 +23,6 @@ export default function Index() {
       <TestimonialStaff />
       <DonateComponent isIndexPage={true} />
       <Footer />
-    </>
+    </section>
   );
 }

@@ -1,6 +1,6 @@
 import logo from "/logo.svg";
 import { Menu01Icon } from "hugeicons-react";
-import DonateButton from "./DonateButton";
+import DonateButtonLangs from "./DonateButton";
 import Navlinks from "./Navlinks";
 import {
   Drawer,
@@ -19,7 +19,7 @@ const NavBarMobile = () => {
     <nav className="relative top-3 mx-auto mt-4 flex w-full max-w-[90%] items-center justify-between rounded-xl bg-white p-2 shadow-2xl">
       <img src={logo} alt="logo" loading="lazy" className="md:w-14 lg:w-16" />
       <Navlinks />
-      <DonateButton />
+      <DonateButtonLangs />
       <Drawer>
         <DrawerTrigger>
           <button
