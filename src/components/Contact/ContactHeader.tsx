@@ -9,12 +9,12 @@ const ContactHeader = () => {
       <header className="h-[90vh] bg-contact-bg-mobile bg-cover bg-no-repeat md:bg-contact-bg-desktop">
         <Header />
       </header>
-      <div className="-mt-36 bg-form-background bg-contain bg-center bg-no-repeat text-center">
+      <div className="mx-4 -mt-48 rounded-[3rem] bg-form-background bg-cover bg-no-repeat text-center md:mx-0 md:-mt-36 md:rounded-none md:bg-contain md:bg-center">
         <div className="space-y-6 pt-24">
-          <h1 className="font-santoshi italic text-gray-500 drop-shadow-md">
+          <h1 className="mx-auto max-w-xs text-center font-santoshi text-xl italic text-gray-500 md:mx-0 md:max-w-full md:text-lg md:drop-shadow-md">
             It takes a community to raise an African Child{" "}
           </h1>
-          <h2 className="mt-12 font-santoshi text-5xl font-bold text-[#006AAC] drop-shadow-md">
+          <h2 className="mx-auto mt-12 max-w-sm font-santoshi text-3xl font-bold text-[#006AAC] md:mx-0 md:max-w-full md:text-5xl md:drop-shadow-md">
             We'd love to hear from you!
           </h2>
           <h3 className="font-santoshi font-semibold text-[#676262]">

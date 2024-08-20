@@ -48,103 +48,106 @@ const ContactForm = (): React.JSX.Element => {
   const LableStyles = "font-santoshi";
 
   return (
-    <div className="mx-auto max-w-md">
-      <h1 className="text-3xl font-bold text-[#5A5555]">Send us a message</h1>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="mt-12 justify-center"
-        noValidate
-      >
-        <div className="">
-          <div className="flex gap-6">
-            <div className="grid gap-2 text-left">
-              <label htmlFor="firstName" className={LableStyles}>
-                First Name
-              </label>
-              <input
-                id="firstName"
-                {...register("firstName")}
-                className={InputStyles}
-                placeholder="John"
-              />
-              {errors.firstName && (
-                <p className="text-xs text-red-500">
-                  {errors.firstName.message}
-                </p>
-              )}
-            </div>
-            <div className="grid gap-2 text-left">
-              <label htmlFor="lastName" className={LableStyles}>
-                Last Name
-              </label>
-              <input
-                id="lastName"
-                {...register("lastName")}
-                className={InputStyles}
-                placeholder="Doe"
-              />
-              {errors.lastName && (
-                <p className="text-xs text-red-500">
-                  {errors.lastName.message}
-                </p>
-              )}
-            </div>
-          </div>
-          <div className="mt-6 flex gap-6">
-            <div className="grid gap-2 text-left">
-              <label htmlFor="phone" className={LableStyles}>
-                Phone
-              </label>
-              <input
-                id="phone"
-                {...register("phone")}
-                className={InputStyles}
-                placeholder="+254712345678"
-              />
-              {errors.phone && (
-                <p className="text-xs text-red-500">{errors.phone.message}</p>
-              )}
-            </div>
-            <div className="grid gap-2 text-left">
-              <label htmlFor="email" className={LableStyles}>
-                Email
-              </label>
-              <input
-                id="email"
-                type="email"
-                {...register("email")}
-                className={InputStyles}
-                placeholder="doe@domain.com"
-              />
-              {errors.email && (
-                <p className="text-xs text-red-500">{errors.email.message}</p>
-              )}
-            </div>
-          </div>
-        </div>
-        <div className="mt-6 grid gap-2 text-left">
-          <label htmlFor="message" className={LableStyles}>
-            Message
-          </label>
-          <textarea
-            id="message"
-            {...register("message")}
-            className="textarea max-h-36 min-h-36 rounded-xl border-2 border-gray-300 px-2 py-3"
-            placeholder="Type your message here"
-          />
-          {errors.message && (
-            <p className="text-xs text-red-500">{errors.message.message}</p>
-          )}
-        </div>
-        <button
-          type="submit"
-          className="mt-3 w-full rounded-lg bg-background-blue py-2 text-sm font-semibold text-white"
+    <>
+      <section className="mx-auto max-w-md">
+        <h1 className="text-3xl font-bold text-[#5A5555]">Send us a message</h1>
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="mx-auto mt-12 max-w-sm items-center justify-center pb-20 md:mx-0 md:max-w-full md:pb-0"
+          noValidate
         >
-          Send message
-        </button>
-      </form>
-      <ToastContainer />
-    </div>
+          <div className="">
+            <div className="gap-6 md:flex">
+              <div className="grid gap-2 text-left">
+                <label htmlFor="firstName" className={LableStyles}>
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  {...(register("firstName"), { required: true })}
+                  className={InputStyles}
+                  placeholder="John"
+                />
+                {errors.firstName && (
+                  <p className="text-xs text-red-500">
+                    {errors.firstName.message}
+                  </p>
+                )}
+              </div>
+              <div className="mt-4 grid gap-2 text-left md:mt-0">
+                <label htmlFor="lastName" className={LableStyles}>
+                  Last Name
+                </label>
+                <input
+                  id="lastName"
+                  {...register("lastName")}
+                  className={InputStyles}
+                  placeholder="Doe"
+                />
+                {errors.lastName && (
+                  <p className="text-xs text-red-500">
+                    {errors.lastName.message}
+                  </p>
+                )}
+              </div>
+            </div>
+            <div className="mt-6 gap-6 md:flex">
+              <div className="grid gap-2 text-left">
+                <label htmlFor="phone" className={LableStyles}>
+                  Phone
+                </label>
+                <input
+                  id="phone"
+                  {...register("phone")}
+                  className={InputStyles}
+                  placeholder="+254712345678"
+                />
+                {errors.phone && (
+                  <p className="text-xs text-red-500">{errors.phone.message}</p>
+                )}
+              </div>
+              <div className="mt-4 grid gap-2 text-left md:mt-0">
+                <label htmlFor="email" className={LableStyles}>
+                  Email
+                </label>
+                <input
+                  id="email"
+                  type="email"
+                  {...register("email")}
+                  className={InputStyles}
+                  placeholder="doe@domain.com"
+                />
+                {errors.email && (
+                  <p className="text-xs text-red-500">{errors.email.message}</p>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 grid gap-2 text-left">
+            <label htmlFor="message" className={LableStyles}>
+              Message
+            </label>
+            <textarea
+              id="message"
+              {...register("message")}
+              className="textarea max-h-36 min-h-36 rounded-xl border-2 border-gray-300 px-2 py-3"
+              placeholder="Type your message here"
+            />
+            {errors.message && (
+              <p className="text-xs text-red-500">{errors.message.message}</p>
+            )}
+          </div>
+          <button
+            type="submit"
+            className="mt-3 w-full rounded-lg bg-background-blue py-2 text-sm font-semibold text-white"
+          >
+            Send message
+          </button>
+        </form>
+        <ToastContainer />
+      </section>
+    </>
   );
 };
 
