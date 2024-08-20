@@ -46,12 +46,13 @@ const ContactForm = (): React.JSX.Element => {
     }
   };
 
-  const InputStyles = "border-2 border-gray-300 rounded-xl px-2 py-1 max-h-12";
+  const InputStyles =
+    "md:w-[278px] border-2 border-gray-300 rounded-xl px-2 py-1 max-h-12";
   const LableStyles = "font-santoshi";
 
   return (
     <>
-      <section className="mx-auto max-w-md">
+      <section className="mx-auto max-w-xl">
         <h1 className="text-3xl font-bold text-[#5A5555]">Send us a message</h1>
         <form
           onSubmit={handleSubmit(onSubmit)}
