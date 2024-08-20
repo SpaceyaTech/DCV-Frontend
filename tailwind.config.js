@@ -22,6 +22,13 @@ module.exports = {
         santoshi: ["Santoshi", "sans-serif"],
         lato: ["Lato", "sans-serif"],
       },
+      backgroundImage: {
+        "contact-bg-desktop":
+          "url('@/assets/images/contact/contactbg-desktop.png')",
+        "contact-bg-mobile":
+          "url('@/assets/images/contact/contactbg-mobile.png')",
+        "form-background": "url('@/assets/images/contact/form-background.png')",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
