@@ -37,8 +37,10 @@ const ContactForm = (): React.JSX.Element => {
 
   const onSubmit: SubmitHandler<FormComponentProps> = async (data) => {
     try {
-      toast.success("Form submitted successfully!");
-      reset();
+      toast.success("Form submitted successfully!", { autoClose: 4000 });
+      setTimeout(() => {
+        reset();
+      }, 3000);
     } catch (error) {
       toast.error("Failed to submit form");
     }
@@ -65,7 +67,7 @@ const ContactForm = (): React.JSX.Element => {
                 <input
                   type="text"
                   id="firstName"
-                  {...(register("firstName"), { required: true })}
+                  {...register("firstName")}
                   className={InputStyles}
                   placeholder="John"
                 />

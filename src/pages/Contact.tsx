@@ -9,7 +9,7 @@ const Contact = () => {
     <div className="">
       <ContactHeader />
       <ContactMap />
-      <div className="mt-48 bg-white">
+      <div className="mt-24 bg-white">
         <Footer />
       </div>
     </div>
