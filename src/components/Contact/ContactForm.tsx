@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z, ZodSchema } from "zod";
@@ -26,23 +26,31 @@ const ContactForm = (): React.JSX.Element => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors, isSubmitting, isSubmitSuccessful, isDirty, isValid },
   } = useForm<FormComponentProps>({
     resolver: zodResolver(schema),
-    mode: "onBlur",
+    mode: "onSubmit",
   });
 
+  const preventToastRerender = useRef(false);
+
   const onSubmit: SubmitHandler<FormComponentProps> = async (data) => {
+    if (preventToastRerender.current) {
+      return;
+    }
+    preventToastRerender.current = true;
+
     try {
       toast.success("Form submitted successfully!", { autoClose: 4000 });
       setTimeout(() => {
         reset();
-      }, 3000);
+        preventToastRerender.current = false;
+      }, 5000);
     } catch (error) {
       toast.error("Failed to submit form");
+      preventToastRerender.current = false;
     }
   };
-
   const InputStyles =
     "md:w-[278px] border-2 border-gray-300 rounded-xl px-2 py-1 max-h-12";
   const LableStyles = "font-santoshi";
@@ -101,7 +109,7 @@ const ContactForm = (): React.JSX.Element => {
                   id="phone"
                   {...register("phone")}
                   className={InputStyles}
-                  placeholder="+254712345678"
+                  placeholder="0712345678"
                 />
                 {errors.phone && (
                   <p className="text-xs text-red-500">{errors.phone.message}</p>
@@ -139,10 +147,11 @@ const ContactForm = (): React.JSX.Element => {
             )}
           </div>
           <button
+            disabled={isSubmitting}
             type="submit"
             className="mt-3 w-full rounded-lg bg-background-blue py-2 text-sm font-semibold text-white"
           >
-            Send message
+            {isSubmitting ? "Submitting..." : "Send message"}
           </button>
         </form>
         <ToastContainer />
