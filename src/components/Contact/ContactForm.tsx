@@ -9,10 +9,7 @@ const schema: ZodSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
   phone: z.string().regex(/^[0-9]{10}$/, "Phone number must be valid"),
-  email: z
-    .string()
-    .email("Invalid email address")
-    .nonempty("Email is required"),
+  email: z.string().email("Invalid email address"),
   message: z.string().min(1, "Message is required"),
 });
 
@@ -32,7 +29,7 @@ const ContactForm = (): React.JSX.Element => {
     formState: { errors },
   } = useForm<FormComponentProps>({
     resolver: zodResolver(schema),
-    mode: "onSubmit",
+    mode: "onBlur",
   });
 
   const onSubmit: SubmitHandler<FormComponentProps> = async (data) => {
