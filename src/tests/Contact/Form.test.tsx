@@ -13,7 +13,6 @@ import { toast, ToastContainer } from "react-toastify";
 //Rendering Form elements
 //Form Validation
 
-// Mock the toast functions
 vi.mock("react-toastify", () => ({
   toast: {
     success: vi.fn(),

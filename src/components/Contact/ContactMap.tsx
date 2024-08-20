@@ -5,6 +5,7 @@ const ContactMap = () => {
     <section>
       <div className="mt-4 md:mt-8">
         <iframe
+          title="Google map embed"
           width={"1036"}
           height={"380"}
           loading="lazy"
