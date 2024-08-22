@@ -29,6 +29,8 @@ module.exports = {
           "url('@/assets/images/contact/contactbg-mobile.png')",
         "form-background": "url('@/assets/images/contact/form-background.png')",
         "formbg-mobile": "url('@/assets/images/contact/formbg-mobile.png')",
+        "hero-background": "url('@/assets/header-image.svg')",
+        "footer-texture": "url('/img/footer-texture.png')",
       },
       colors: {
         border: "hsl(var(--border))",

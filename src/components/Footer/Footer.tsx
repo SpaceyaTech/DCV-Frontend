@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Logo from "/src/stories/assets/logo.png";
-import FacebookIcon from "/src/stories/assets/facebook.png";
-import DonationsDesktop from "/src/stories/assets/dontations-desktop.png";
-import FooterBackground from "/src/stories/assets/footer-bg.png";
-import FooterBGMobile from "/src/stories/assets/footer-bgmobile.png";
+import { useEffect, useState } from "react";
+import Logo from "/logo.svg";
+import FacebookIcon from "@/assets/facebook.png";
+import DonationsDesktop from "@/assets//dontations-desktop.png";
+import FooterBackground from "@/assets//footer-bg.png";
+import FooterBGMobile from "@/assets//footer-bgmobile.png";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);

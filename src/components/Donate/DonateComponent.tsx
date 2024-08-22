@@ -1,7 +1,7 @@
-import boyImage from "@/stories/assets/boy-in-hat.png";
-import DonationsMobile from "@/stories/assets/donations-mobile.png";
-import DonationsDesktop from "@/stories/assets/dontations-desktop.png";
-import heartIcon from "@/stories/assets/heart-icon.png";
+import boyImage from "@/assets//boy-in-hat.png";
+import DonationsMobile from "@/assets/donations-mobile.png";
+import DonationsDesktop from "@/assets/dontations-desktop.png";
+import heartIcon from "@/assets/heart-icon.png";
 
 interface DonateComponentProps {
   isIndexPage: boolean;
