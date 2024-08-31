@@ -8,6 +8,7 @@ const Navlinks = () => {
     { to: "/news", text: "" },
     { to: "/staff", text: "Meet our staff" },
     { to: "/children", text: "Meet our children" },
+    { to: "/contact", text: "Contact Us" },
   ];
 
   return (

@@ -23,6 +23,12 @@ module.exports = {
         lato: ["Lato", "sans-serif"],
       },
       backgroundImage: {
+        "contact-bg-desktop":
+          "url('@/assets/images/contact/contactbg-desktop.png')",
+        "contact-bg-mobile":
+          "url('@/assets/images/contact/contactbg-mobile.png')",
+        "form-background": "url('@/assets/images/contact/form-background.png')",
+        "formbg-mobile": "url('@/assets/images/contact/formbg-mobile.png')",
         "hero-background": "url('@/assets/header-image.svg')",
         "footer-texture": "url('/img/footer-texture.png')",
       },
