@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer/Footer";
 import Ishmael from "@/assets/ishmael.svg";
 import furnitureImage from "@/assets/furniture_workshop.svg";
+import farmingImage from "@/assets/farming_image.svg";
 import DonateComponent from "@/components/Donate/DonateComponent";
 
 const Projects = () => {
@@ -22,6 +23,37 @@ const Projects = () => {
           </p>
         </div>
         <div>
+          <div className="relative flex items-center justify-between sm:my-20">
+            <img
+              src={farmingImage}
+              alt="furniture image"
+              className="hidden sm:-mt-16 sm:block"
+            />
+            <div className="sm:absolute sm:right-0 sm:top-0">
+              <h1 className="relative flex items-center text-lg font-semibold text-secondary600 sm:text-xl">
+                <span className="absolute left-0 w-8 border-t-2 border-gray-800 sm:w-14"></span>
+                <span className="ml-10 sm:ml-16">FARMING</span>
+              </h1>
+              <img
+                src={farmingImage}
+                alt="furniture image"
+                className="sm:hidden"
+              />
+              <div className="gap-40 sm:flex">
+                <p className="my-5 text-base font-medium text-primary1000 sm:max-w-[450px]">
+                  To ensure that we are food secure and are serving our children
+                  the best diets, we put a section of the land under DCV to
+                  farming and poultry farming. From the farm, we harvest fresh
+                  vegetables, and eggs which help to support our kitchen.
+                  <br />
+                  <br />
+                  The farm is also a very good learning resource for our
+                  children, because they get to learn simple agricultural
+                  practices which they may apply later on in life.
+                </p>
+              </div>
+            </div>
+          </div>
           <div className="sm:mb-20 sm:mt-10">
             <h1 className="relative flex items-center text-lg font-semibold text-secondary600 sm:text-xl">
               <span className="absolute left-0 w-8 border-t-2 border-gray-800 sm:w-14"></span>
