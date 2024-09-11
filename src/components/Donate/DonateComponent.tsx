@@ -2,6 +2,7 @@ import boyImage from "@/assets//boy-in-hat.png";
 import DonationsMobile from "@/assets/donations-mobile.png";
 import DonationsDesktop from "@/assets/dontations-desktop.png";
 import heartIcon from "@/assets/heart-icon.png";
+import { Link, NavLink } from "react-router-dom";
 
 interface DonateComponentProps {
   isIndexPage: boolean;
@@ -55,7 +56,7 @@ const DonateComponent: React.FC<DonateComponentProps> = ({ isIndexPage }) => {
             }`}
           >
             <h1 className="font-santoshi text-lg font-bold md:text-[20px]">
-              Donate to DCV today
+              <Link to="/donate">Donate to DCV today</Link>
             </h1>
             <img src={heartIcon} alt="heart icon" />
           </button>
