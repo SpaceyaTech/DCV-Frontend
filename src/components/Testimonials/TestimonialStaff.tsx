@@ -37,7 +37,7 @@ const TestimonialStaff = () => {
 
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link
-              to="/"
+              to="/staff"
               className="flex items-center justify-center gap-3 rounded-full bg-secondary600 px-5 py-[10.63px] text-center font-bold text-secondary100"
             >
               Meet the Staff

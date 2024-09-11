@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { Button } from "../ui/button";
 import heartIcon from "@/assets/hearticon.png";
 
@@ -50,7 +51,7 @@ function ChildrenCard({ image, list }: ChidrenCardProps) {
           size="default"
           className="mt-8 flex items-center gap-2 self-center rounded-full bg-primary-main text-base font-medium text-white lg:mt-0 lg:self-start"
         >
-          Support us today{" "}
+          <NavLink to="donate">Support us today</NavLink>{" "}
           <img src={heartIcon} alt="heart" loading="lazy" className="w-4" />
         </Button>
       </div>

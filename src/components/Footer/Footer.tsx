@@ -4,6 +4,7 @@ import FacebookIcon from "@/assets/facebook.png";
 import DonationsDesktop from "@/assets//dontations-desktop.png";
 import FooterBackground from "@/assets//footer-bg.png";
 import FooterBGMobile from "@/assets//footer-bgmobile.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -53,11 +54,18 @@ const Footer = () => {
         </div>
         <div className="font-santoshi text-lg text-[#898384]">
           <div className="flex flex-col space-y-3 text-[#898384] lg:text-right">
-            <a href="#">About us</a>
-            <a href="#">Our projects</a>
-            <a href="#">News</a>
-            <a href="#">Meet our staff</a>
-            <a href="#">Meet the children</a>
+            <Link className="hover:underline" to="about">
+              About us
+            </Link>
+            <Link className="hover:underline" to="projects">
+              Our projects
+            </Link>
+            <Link className="hover:underline" to="staff">
+              Meet our staff
+            </Link>
+            <Link className="hover:underline" to="children">
+              Meet the children
+            </Link>
           </div>
           <div className="mt-6 flex gap-4">
             <div className="text-nowrap">
