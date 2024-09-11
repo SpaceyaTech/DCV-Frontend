@@ -5,5 +5,7 @@
     "tailwindcss",
     "tilg",
     "wireit"
-  ]
+  ],
+  "pieces.cloudCapabilities": "Blended",
+  "pieces.telemetry": true
 }
