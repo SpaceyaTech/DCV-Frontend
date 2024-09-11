@@ -1,6 +1,7 @@
 import DecorativeImageTop from "@/assets/Hero-Decorative-1.png";
 import DecorativeImageBottom from "@/assets/Hero-Decorative-2.png";
 import { Button } from "../ui/button";
+import { NavLink } from "react-router-dom";
 
 const index = () => {
   return (
@@ -26,7 +27,7 @@ const index = () => {
         </p>
 
         <Button className="h-[46px] w-[296px] self-center rounded-[67px] bg-[#0097F5] text-[20px]">
-          Support us today 💛
+          <NavLink to="donate">Support us today 💛</NavLink>
         </Button>
         <img
           className="rounded-b-xl"

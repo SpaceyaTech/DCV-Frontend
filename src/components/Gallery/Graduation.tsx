@@ -3,7 +3,7 @@ import graduationImage01 from "@/assets/graduationimage01.svg";
 import graduationImage02 from "@/assets/graduationimage02.svg";
 import favouriteIcon from "@/assets/favourite_icon.svg";
 import handIcon from "@/assets/hand_icon.svg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Graduation = () => {
   return (
@@ -41,7 +41,8 @@ const Graduation = () => {
           </Link>
           <Link to="/meet" className="flex w-full items-center justify-center">
             <Button className="w-[90%] gap-2 rounded-full border border-primary600 bg-transparent px-20 py-6 text-xl text-primary-text sm:px-8">
-              Meet the children <img src={handIcon} alt="hand icon" />
+              <NavLink to="children">Meet the children</NavLink>{" "}
+              <img src={handIcon} alt="hand icon" />
             </Button>
           </Link>
         </div>
