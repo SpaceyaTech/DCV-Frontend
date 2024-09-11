@@ -44,7 +44,7 @@ const TestimonialStaff = () => {
               <SmileIcon className="fill-secondary100 text-xl text-secondary600" />
             </Link>
             <Link
-              to="/"
+              to="projects"
               className="flex items-center justify-center gap-3 rounded-full border border-secondary600 bg-secondary100 px-5 py-[10.63px] text-center font-bold text-secondary600"
             >
               Discover projects we help with

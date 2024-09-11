@@ -54,16 +54,16 @@ const Footer = () => {
         </div>
         <div className="font-santoshi text-lg text-[#898384]">
           <div className="flex flex-col space-y-3 text-[#898384] lg:text-right">
-            <Link className="hover:underline" to="about">
+            <Link className="hover:underline" to="/about">
               About us
             </Link>
-            <Link className="hover:underline" to="projects">
+            <Link className="hover:underline" to="/projects">
               Our projects
             </Link>
-            <Link className="hover:underline" to="staff">
+            <Link className="hover:underline" to="/staff">
               Meet our staff
             </Link>
-            <Link className="hover:underline" to="children">
+            <Link className="hover:underline" to="/children">
               Meet the children
             </Link>
           </div>
