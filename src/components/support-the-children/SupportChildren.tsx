@@ -9,7 +9,7 @@ function SupportChildren() {
         <div className="flex-center h-80 w-full rounded-xl bg-support-the-children-1 bg-cover bg-no-repeat p-1 md:w-2/5">
           <img
             src={cover1}
-            alt=""
+            alt="cover 1"
             className="size-full rounded-lg object-cover"
           />
         </div>
@@ -33,7 +33,7 @@ function SupportChildren() {
         <div className="flex-center h-80 w-full rounded-xl bg-support-the-children-2 bg-cover bg-no-repeat p-1 md:w-2/5">
           <img
             src={cover2}
-            alt=""
+            alt="cover 2"
             className="size-full rounded-lg object-cover"
           />
         </div>
