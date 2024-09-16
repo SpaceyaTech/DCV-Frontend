@@ -31,6 +31,10 @@ module.exports = {
         "formbg-mobile": "url('@/assets/images/contact/formbg-mobile.png')",
         "hero-background": "url('@/assets/header-image.svg')",
         "footer-texture": "url('/img/footer-texture.png')",
+        "support-the-children-1":
+          "url('@/assets/images/support-the-children-bg-1.png')",
+        "support-the-children-2":
+          "url('@/assets/images/support-the-children-bg-2.png')",
       },
       colors: {
         border: "hsl(var(--border))",

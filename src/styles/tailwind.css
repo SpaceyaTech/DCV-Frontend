@@ -80,6 +80,14 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
 }
 body {
   background-color: #fdf6ed;
