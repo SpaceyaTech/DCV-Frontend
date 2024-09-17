@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { Image02Icon } from "hugeicons-react";
-import galleryImage01 from "@/assets/galleryimage01.svg";
-import galleryImage02 from "@/assets/galleryimage02.svg";
-import galleryImage03 from "@/assets/galleryimage03.svg";
-import galleryImage04 from "@/assets/galleryimage04.svg";
-import galleryImage05 from "@/assets/galleryimage05.svg";
-import galleryImage06 from "@/assets/galleryimage06.svg";
-import galleryImage07 from "@/assets/galleryimage07.svg";
-import galleryImage08 from "@/assets/galleryimage08.svg";
-import galleryImage09 from "@/assets/galleryimage09.svg";
+import galleryImage01 from "@/assets/galleryimage01.png";
+import galleryImage02 from "@/assets/galleryimage03.png";
+import galleryImage03 from "@/assets/galleryimage02.png";
+import galleryImage04 from "@/assets/galleryimage05.png";
+import galleryImage05 from "@/assets/galleryimage06.png";
+import galleryImage06 from "@/assets/galleryimage04.png";
+import galleryImage07 from "@/assets/galleryimage09.png";
+import galleryImage08 from "@/assets/galleryimage08.png";
+import galleryImage09 from "@/assets/galleryimage07.png";
 import galleryMobile from "@/assets/gallerymobile.svg";
 import { CircleArrowRight02Icon } from "hugeicons-react";
 
