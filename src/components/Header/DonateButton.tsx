@@ -22,9 +22,9 @@ const DonateButton = () => {
       </Tabs>
       <Button
         size="lg"
-        className="hidden items-center gap-2 rounded-xl bg-primary-main text-xl font-medium text-white lg:flex"
+        className="hidden items-center gap-2 rounded-xl bg-primary-main text-xl font-medium text-white hover:scale-95 hover:bg-primary-main lg:flex"
       >
-        <NavLink to="donate">Donate</NavLink>
+        <NavLink to="/donate">Donate</NavLink>
         <img src={heartIcon} alt="heart" loading="lazy" />
       </Button>
     </div>
