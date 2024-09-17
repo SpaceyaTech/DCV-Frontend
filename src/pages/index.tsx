@@ -10,12 +10,14 @@ import Gallery from "@/components/Gallery/Gallery";
 import TestimonialCaroussel from "@/components/Testimonials/TestimonialCaroussel";
 import TestimonialStaff from "@/components/Testimonials/TestimonialStaff";
 import InfoHeader from "@/components/Header/InfoHeader";
+import SupportChildren from "@/components/support-the-children/SupportChildren";
 
 export default function Index() {
   return (
     <section className="relative">
       <Header />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
+      <SupportChildren />
       <NewsAlert />
       <Graduation />
       <Gallery />
