@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import TeamCard, { StaffMember } from "@/components/MeetTheTeam/TeamCard";
 
 import athman from "@/assets/images/meet-the-team/athman.jpeg";
+import anthony from "@/assets/images/meet-the-team/anthony.png";
 import chebet from "@/assets/images/meet-the-team/chebet.jpeg";
 import esther from "@/assets/images/meet-the-team/esther.jpeg";
 import faith from "@/assets/images/meet-the-team/faith.jpeg";
@@ -75,6 +76,13 @@ const staff: StaffMember[] = [
     role: "Social Worker",
     bg: "#FFA10C",
     image: faith,
+  },
+  {
+    id: 11,
+    name: "Anthony Matevu",
+    role: "Communications Manager",
+    bg: "#003D63",
+    image: anthony,
   },
   {
     id: 4,
