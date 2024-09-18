@@ -85,13 +85,6 @@ const staff: StaffMember[] = [
     image: anthony,
   },
   {
-    id: 4,
-    name: "Madam Mary",
-    role: "House mother",
-    bg: "#003D63",
-    image: mary,
-  },
-  {
     id: 5,
     name: "Madam Rose",
     role: "House mother",
@@ -132,5 +125,12 @@ const staff: StaffMember[] = [
     role: "Carpenter & Wood instructor",
     bg: "#FFA10C",
     image: ishmael,
+  },
+  {
+    id: 4,
+    name: "Madam Mary",
+    role: "House mother",
+    bg: "#003D63",
+    image: mary,
   },
 ];

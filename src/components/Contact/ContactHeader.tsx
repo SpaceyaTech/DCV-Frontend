@@ -6,8 +6,8 @@ import callIcon from "@/assets/call-icon.png";
 const ContactHeader = () => {
   return (
     <section className="">
-      <header className="h-[90vh] bg-contact-bg-mobile bg-cover bg-no-repeat md:bg-contact-bg-desktop">
-        <Header />
+      <header className="h-[90vh]">
+        <Header bg="bg-hero-background-2" />
       </header>
       <div className="mx-4 -mt-48 rounded-[3rem] bg-form-background bg-cover bg-no-repeat text-center md:mx-0 md:-mt-36 md:rounded-none md:bg-contain md:bg-center">
         <div className="space-y-6 pt-24">
