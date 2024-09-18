@@ -1,6 +1,6 @@
 import DonateComponent from "@/components/Donate/DonateComponent";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header";
+import HeaderLayout from "@/components/Header/HeaderLayout";
 import TeamCard, { StaffMember } from "@/components/MeetTheTeam/TeamCard";
 
 import athman from "@/assets/images/meet-the-team/athman.jpeg";
@@ -18,7 +18,7 @@ import yvonne from "@/assets/images/meet-the-team/yvonne.jpeg";
 function MeetTheTeam() {
   return (
     <main className="space-y-12">
-      <Header />
+      <HeaderLayout />
       <section className="mx-auto flex flex-col items-center gap-10 lg:container md:pb-6 lg:max-w-[90%] lg:pb-12">
         <h1 className="text-3xl font-bold lg:text-5xl">Meet our Staff</h1>
 

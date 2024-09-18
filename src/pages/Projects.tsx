@@ -1,14 +1,14 @@
-import Header from "@/components/Header";
 import Footer from "@/components/Footer/Footer";
 import Ishmael from "@/assets/ishmael.svg";
 import furnitureImage from "@/assets/furniture_workshop.svg";
 import farmingImage from "@/assets/farming_image.svg";
 import DonateComponent from "@/components/Donate/DonateComponent";
+import HeaderLayout from "@/components/Header/HeaderLayout";
 
 const Projects = () => {
   return (
     <>
-      <Header />
+      <HeaderLayout />
       <div className="m-10 flex flex-col items-center justify-center sm:mx-40 sm:my-20 sm:items-start">
         <div className="sm:max-w-[650px]">
           <h1 className="flex items-center text-lg font-semibold text-primary-text sm:text-xl">
