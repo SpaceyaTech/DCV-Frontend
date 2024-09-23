@@ -30,6 +30,7 @@ module.exports = {
         "form-background": "url('@/assets/images/contact/form-background.png')",
         "formbg-mobile": "url('@/assets/images/contact/formbg-mobile.png')",
         "hero-background": "url('@/assets/hero-image.png')",
+        "hero-background-2": "url('@/assets/hero-image-2.png')",
         "footer-texture": "url('/img/footer-texture.png')",
         "support-the-children-1":
           "url('@/assets/images/support-the-children-bg-1.png')",

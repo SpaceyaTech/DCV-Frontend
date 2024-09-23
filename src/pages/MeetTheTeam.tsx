@@ -1,9 +1,10 @@
 import DonateComponent from "@/components/Donate/DonateComponent";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header";
+import HeaderLayout from "@/components/Header/HeaderLayout";
 import TeamCard, { StaffMember } from "@/components/MeetTheTeam/TeamCard";
 
 import athman from "@/assets/images/meet-the-team/athman.jpeg";
+import anthony from "@/assets/images/meet-the-team/anthony.png";
 import chebet from "@/assets/images/meet-the-team/chebet.jpeg";
 import esther from "@/assets/images/meet-the-team/esther.jpeg";
 import faith from "@/assets/images/meet-the-team/faith.jpeg";
@@ -17,7 +18,7 @@ import yvonne from "@/assets/images/meet-the-team/yvonne.jpeg";
 function MeetTheTeam() {
   return (
     <main className="space-y-12">
-      <Header />
+      <HeaderLayout />
       <section className="mx-auto flex flex-col items-center gap-10 lg:container md:pb-6 lg:max-w-[90%] lg:pb-12">
         <h1 className="text-3xl font-bold lg:text-5xl">Meet our Staff</h1>
 
@@ -77,11 +78,11 @@ const staff: StaffMember[] = [
     image: faith,
   },
   {
-    id: 4,
-    name: "Madam Mary",
-    role: "House mother",
+    id: 11,
+    name: "Anthony Matevu",
+    role: "Communications Manager",
     bg: "#003D63",
-    image: mary,
+    image: anthony,
   },
   {
     id: 5,
@@ -124,5 +125,12 @@ const staff: StaffMember[] = [
     role: "Carpenter & Wood instructor",
     bg: "#FFA10C",
     image: ishmael,
+  },
+  {
+    id: 4,
+    name: "Madam Mary",
+    role: "House mother",
+    bg: "#003D63",
+    image: mary,
   },
 ];

@@ -2,14 +2,14 @@ import React from "react";
 
 import ChildrenCard from "@/components/_meet-the-children/ChildrenCard";
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/Header";
 import { cn } from "@/lib/utils";
+import HeaderLayout from "@/components/Header/HeaderLayout";
 
 function MeetTheChildren() {
   const [ageBracket, setAgeBracket] = React.useState("Age 1-5");
   return (
     <main className="space-y-12">
-      <Header />
+      <HeaderLayout />
       <section className="container mx-auto flex w-full max-w-screen-xl flex-col items-center gap-16 font-lato sm:px-4 md:py-6 lg:py-12">
         <div className="flex w-full max-w-xl flex-col items-center gap-12 text-center">
           <h3 className="text-2xl font-bold leading-10 lg:text-[32px]">

@@ -1,5 +1,5 @@
 import HammerIcon from "@/assets/icons/hammer-icon.svg";
-import RoseServing from "@/assets/images/rose-serving-food.png";
+import woman from "@/assets/images/woman-carrying-baby.png";
 import RoseImg from "@/assets/images/rose.png";
 import { SmileIcon } from "hugeicons-react";
 import { Link } from "react-router-dom";
@@ -54,7 +54,7 @@ const TestimonialStaff = () => {
         </div>
         <div className="md:w-1/2">
           <img
-            src={RoseServing}
+            src={woman}
             alt="Rose serving food"
             className="rounded-[39.44px]"
           />

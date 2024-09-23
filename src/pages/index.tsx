@@ -15,7 +15,7 @@ import SupportChildren from "@/components/support-the-children/SupportChildren";
 export default function Index() {
   return (
     <section className="relative">
-      <Header />
+      <Header bg="bg-hero-background" />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <SupportChildren />
       <NewsAlert />
