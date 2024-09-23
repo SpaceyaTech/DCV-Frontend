@@ -5,11 +5,11 @@ import callIcon from "@/assets/call-icon.png";
 
 const ContactHeader = () => {
   return (
-    <section className="">
+    <section>
       <header className="h-[90vh]">
         <Header bg="bg-hero-background-2" />
       </header>
-      <div className="mx-4 -mt-48 rounded-[3rem] bg-form-background bg-cover bg-no-repeat text-center md:mx-0 md:-mt-36 md:rounded-none md:bg-contain md:bg-center">
+      <div className="mx-4 -mt-48 rounded-[3rem] bg-white bg-cover bg-no-repeat py-2 text-center md:mx-0 md:-mt-36 md:rounded-none md:bg-contain md:bg-center">
         <div className="space-y-6 pt-24">
           <h1 className="mx-auto max-w-xs text-center font-santoshi text-xl italic text-gray-500 md:mx-0 md:max-w-full md:text-lg md:drop-shadow-md">
             It takes a community to raise an African Child{" "}
@@ -30,10 +30,10 @@ const ContactHeader = () => {
               +254 791 630 666
             </h4>
           </button>
-          <h5>OR</h5>
+          {/* <h5>OR</h5>
           <div className="md:pb-36">
             <ContactForm />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
