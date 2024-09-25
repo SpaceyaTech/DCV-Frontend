@@ -25,7 +25,7 @@ const NewsAlert = () => {
         <CircleArrowRight02Icon className="mt-10 block sm:hidden" />
       </div>
       <NewsCard />
-      <a
+      {/* <a
         href="https://www.globalgiving.org/projects/globalgiving2023"
         target="_blank"
         rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const NewsAlert = () => {
           Read more good news
           <SmileIcon className="fill-white text-xl text-secondary600" />
         </Button>
-      </a>
+      </a> */}
     </div>
   );
 };
