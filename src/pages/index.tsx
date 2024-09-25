@@ -6,10 +6,9 @@ import HeroCardMobile from "@/components/HeroCardSectionMobile";
 import { isMobile } from "react-device-detect";
 import NewsAlert from "@/components/NewsAlert/NewsAlert";
 import Graduation from "@/components/Gallery/Graduation";
-import Gallery from "@/components/Gallery/Gallery";
 import TestimonialCaroussel from "@/components/Testimonials/TestimonialCaroussel";
 import TestimonialStaff from "@/components/Testimonials/TestimonialStaff";
-import InfoHeader from "@/components/Header/InfoHeader";
+
 import SupportChildren from "@/components/support-the-children/SupportChildren";
 
 export default function Index() {
@@ -20,7 +19,7 @@ export default function Index() {
       <SupportChildren />
       <NewsAlert />
       <Graduation />
-      <Gallery />
+      {/* <Gallery /> */}
       <TestimonialCaroussel />
       <TestimonialStaff />
       <DonateComponent isIndexPage={true} />
