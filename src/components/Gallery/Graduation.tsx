@@ -34,13 +34,13 @@ const Graduation = () => {
             to="/donation"
             className="flex w-full items-center justify-center"
           >
-            <Button className="w-[90%] gap-2 rounded-full bg-primary600 px-20 py-6 text-xl sm:px-8">
+            <Button className="w-[90%] gap-2 rounded-full bg-primary600 px-20 py-6 text-xl transition-all ease-in-out hover:scale-105 hover:bg-primary600 sm:px-8">
               Donate to DCV today
               <img src={favouriteIcon} className="w-8" alt="favourite icon" />
             </Button>
           </Link>
           <Link to="/meet" className="flex w-full items-center justify-center">
-            <Button className="w-[90%] gap-2 rounded-full border border-primary600 bg-transparent px-20 py-6 text-xl text-primary-text sm:px-8">
+            <Button className="w-[90%] gap-2 rounded-full border border-primary600 bg-transparent px-20 py-6 text-xl text-primary-text transition-all ease-in-out hover:scale-105 hover:bg-transparent sm:px-8">
               <NavLink to="children">Meet the children</NavLink>{" "}
               <img src={handIcon} alt="hand icon" />
             </Button>

@@ -49,8 +49,11 @@ const Gallery = () => {
       <p className="my-10 w-[80%] text-center text-2xl font-semibold sm:w-1/3">
         Want to see more pictures and moments from Diani Children’s Village?
       </p>
-      <Link to="/gallery" className="flex justify-center">
-        <Button className="gap-2 rounded-full bg-secondary600 px-16 py-6 text-xl sm:w-fit">
+      <Link
+        to="/gallery"
+        className="flex justify-center transition-all ease-in-out hover:scale-105"
+      >
+        <Button className="gap-2 rounded-full bg-secondary600 px-16 py-6 text-xl hover:bg-secondary600 sm:w-fit">
           Check out our gallery
           <Image02Icon className="fill-white text-xl text-secondary600" />
         </Button>

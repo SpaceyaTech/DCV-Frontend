@@ -27,7 +27,7 @@ const index = () => {
           and support.
         </p>
 
-        <Button className="h-[46px] w-[296px] self-center rounded-[67px] bg-[#0097F5] text-[18px]">
+        <Button className="h-[46px] w-[296px] self-center rounded-[67px] bg-[#0097F5] text-[18px] transition-all ease-linear hover:scale-105 hover:bg-[#0097F5]">
           Support us today 💛
         </Button>
       </div>

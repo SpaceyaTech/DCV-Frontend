@@ -26,7 +26,7 @@ const index = () => {
           transforming lives <br></br> through dedicated care and support.
         </p>
 
-        <Button className="h-[46px] w-[296px] self-center rounded-[67px] bg-[#0097F5] text-[20px]">
+        <Button className="h-[46px] w-[296px] self-center rounded-[67px] bg-[#0097F5] text-[20px] transition-all ease-linear hover:scale-105 hover:bg-[#0097F5]">
           <NavLink to="donate">Support us today 💛</NavLink>
         </Button>
         <img

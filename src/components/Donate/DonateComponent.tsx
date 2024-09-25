@@ -49,7 +49,7 @@ const DonateComponent: React.FC<DonateComponentProps> = ({ isIndexPage }) => {
             donating, you're investing in their hopes and dreams.
           </p>
           <button
-            className={`mx-auto flex items-center gap-2 rounded-full px-8 py-2 md:mx-0 md:mt-6 ${
+            className={`mx-auto flex items-center gap-2 rounded-full px-8 py-2 transition-all ease-in-out hover:scale-105 md:mx-0 md:mt-6 ${
               isIndexPage
                 ? "bg-white text-background-blue"
                 : "bg-background-blue text-white"
