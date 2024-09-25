@@ -39,10 +39,14 @@ const Footer = () => {
           </div>
           <div className="flex items-center">
             <div className="">Follow us on:</div>
-            <div className="flex items-center">
-              <img src={FacebookIcon} alt="facebook logo" className="" />
-              <h2>Diani Children's Village</h2>
-            </div>
+            <a
+              href="https://www.facebook.com/dianichildrensvillage/"
+              target="_blank"
+              className="flex items-center hover:underline"
+            >
+              <img src={FacebookIcon} alt="facebook logo" />
+              <p>Diani Children's Village</p>
+            </a>
           </div>
         </div>
         <div className="lg:w-1/2">

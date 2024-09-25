@@ -25,17 +25,17 @@ const NewsAlert = () => {
         <CircleArrowRight02Icon className="mt-10 block sm:hidden" />
       </div>
       <NewsCard />
-      <a
+      {/* <a
         href="https://www.globalgiving.org/projects/globalgiving2023"
         target="_blank"
         rel="noopener noreferrer"
         className="flex justify-center"
       >
-        <Button className="gap-2 rounded-full bg-secondary600 px-16 py-6 text-xl sm:w-fit sm:px-8">
+        <Button className="gap-2 rounded-full bg-secondary600 px-16 py-6 text-xl ease-in-out hover:scale-105 hover:bg-secondary600 sm:w-fit sm:px-8">
           Read more good news
           <SmileIcon className="fill-white text-xl text-secondary600" />
         </Button>
-      </a>
+      </a> */}
     </div>
   );
 };
