@@ -4,12 +4,12 @@ import { Button } from "../ui/button";
 
 const index = () => {
   return (
-    <div className="relative bottom-32 mx-auto w-[90%] rounded-xl bg-white text-base">
-      <img
+    <div className="relative bottom-32 mx-auto w-[90%] rounded-xl bg-white p-2 text-base">
+      {/* <img
         className="rounded-t-xl"
         src={DecorativeImageTop}
         alt="Top decorative pattern mobile"
-      />
+      /> */}
 
       <div className="flex flex-col justify-center gap-y-4 p-2 pb-4">
         <p className="text-[#898384]">
@@ -32,11 +32,11 @@ const index = () => {
         </Button>
       </div>
 
-      <img
+      {/* <img
         className="rounded-b-xl"
         src={DecorativeImageBottom}
         alt="Bottom decorative pattern mobile"
-      />
+      /> */}
     </div>
   );
 };

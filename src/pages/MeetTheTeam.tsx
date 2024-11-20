@@ -6,14 +6,11 @@ import TeamCard, { StaffMember } from "@/components/MeetTheTeam/TeamCard";
 import athman from "@/assets/images/meet-the-team/athman.jpeg";
 import anthony from "@/assets/images/meet-the-team/anthony.png";
 import chebet from "@/assets/images/meet-the-team/chebet.jpeg";
-import esther from "@/assets/images/meet-the-team/esther.jpeg";
 import faith from "@/assets/images/meet-the-team/faith.jpeg";
 import ishmael from "@/assets/images/meet-the-team/ishmael.jpeg";
 import maryMother from "@/assets/images/meet-the-team/mary-mother.jpeg";
 import maryNyanya from "@/assets/images/meet-the-team/mary-nyanya.jpeg";
-import mary from "@/assets/images/meet-the-team/mary.jpeg";
 import rose from "@/assets/images/meet-the-team/rose.jpeg";
-import yvonne from "@/assets/images/meet-the-team/yvonne.jpeg";
 
 function MeetTheTeam() {
   return (
@@ -22,29 +19,10 @@ function MeetTheTeam() {
       <section className="mx-auto flex flex-col items-center gap-10 lg:container md:pb-6 lg:max-w-[90%] lg:pb-12">
         <h1 className="text-3xl font-bold lg:text-5xl">Meet our Staff</h1>
 
-        <div className="flex w-full flex-col items-center gap-6 px-4 md:gap-10">
-          <div className="grid w-full grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:w-1/2 lg:gap-12">
-            {staff.slice(0, 2).map(({ id, name, role, bg, image }) => (
-              <TeamCard
-                key={id}
-                name={name}
-                role={role}
-                bg={bg}
-                image={image}
-              />
-            ))}
-          </div>
-          <div className="grid w-full grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {staff.slice(2).map(({ id, name, role, bg, image }) => (
-              <TeamCard
-                key={id}
-                name={name}
-                role={role}
-                bg={bg}
-                image={image}
-              />
-            ))}
-          </div>
+        <div className="grid w-full grid-cols-1 justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {staff.map(({ id, name, role, bg, image }) => (
+            <TeamCard key={id} name={name} role={role} bg={bg} image={image} />
+          ))}
         </div>
       </section>
       <DonateComponent isIndexPage={false} />
@@ -56,20 +34,6 @@ function MeetTheTeam() {
 export default MeetTheTeam;
 
 const staff: StaffMember[] = [
-  {
-    id: 1,
-    name: "Yvonne ter Avest",
-    role: "Co-Founder",
-    bg: "#0097F5",
-    image: yvonne,
-  },
-  {
-    id: 2,
-    name: "Esther Themba",
-    role: "Community Manager",
-    bg: "#FFA10C",
-    image: esther,
-  },
   {
     id: 3,
     name: "Madam Faith",
@@ -125,12 +89,5 @@ const staff: StaffMember[] = [
     role: "Carpenter & Wood instructor",
     bg: "#FFA10C",
     image: ishmael,
-  },
-  {
-    id: 4,
-    name: "Madam Mary",
-    role: "House mother",
-    bg: "#003D63",
-    image: mary,
   },
 ];
