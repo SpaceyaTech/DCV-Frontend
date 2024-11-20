@@ -10,6 +10,8 @@ import TestimonialCaroussel from "@/components/Testimonials/TestimonialCaroussel
 import TestimonialStaff from "@/components/Testimonials/TestimonialStaff";
 
 import SupportChildren from "@/components/support-the-children/SupportChildren";
+import StatsSection from "@/components/StatsSection/StatsSection";
+import Gallery from "@/components/Gallery/Gallery";
 
 export default function Index() {
   return (
@@ -17,9 +19,10 @@ export default function Index() {
       <Header bg="bg-hero-background" />
       {isMobile ? <HeroCardMobile /> : <HeroCardDesktop />}
       <SupportChildren />
+      <StatsSection />
       <NewsAlert />
       <Graduation />
-      {/* <Gallery /> */}
+      <Gallery />
       <TestimonialCaroussel />
       <TestimonialStaff />
       <DonateComponent isIndexPage={true} />
